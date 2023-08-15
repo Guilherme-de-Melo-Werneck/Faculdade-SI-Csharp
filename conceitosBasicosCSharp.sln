@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conceitosBasicos", "conceitosBasicos\conceitosBasicos.csproj", "{9E71F82D-34D1-4D3F-8DC1-F25BA09C375C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E71F82D-34D1-4D3F-8DC1-F25BA09C375C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E71F82D-34D1-4D3F-8DC1-F25BA09C375C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E71F82D-34D1-4D3F-8DC1-F25BA09C375C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E71F82D-34D1-4D3F-8DC1-F25BA09C375C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7472643-573C-4358-97B0-B2592F5ECAFC}
+	EndGlobalSection
+EndGlobal
