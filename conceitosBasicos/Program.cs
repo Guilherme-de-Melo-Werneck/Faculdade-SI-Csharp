@@ -16,11 +16,17 @@
 
 using conceitosBasicos;
 
-int num1 = 20;
-int num2 = 11, result;
+int n1 = 20;
+int n2 = 11, result;
 
 Somador soma;
 soma = new Somador();
 
-result = soma.Soma(num1, num2);
-Console.WriteLine(result);
+result = soma.Soma(n1, n2);
+Console.WriteLine($"A soma dos números {n1} + {n2} é {result}");
+
+Conversor conversor = new Conversor();
+
+double metros = 1.76;
+Console.WriteLine("A medida {0} metros corresponde a {1}", metros, Conversor.MetrosMilimetros(1.76));
+

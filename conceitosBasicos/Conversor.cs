@@ -10,7 +10,7 @@ namespace conceitosBasicos
     {
         public static double MetrosMilimetros(double metros)
         {
-            return metros + 1000;
+            return metros * 1000;
         }
     }
 }
