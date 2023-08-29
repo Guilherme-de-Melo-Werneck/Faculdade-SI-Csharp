@@ -43,10 +43,10 @@ using conceitosBasicos;
 
 
             int multiplos = 0;
-
             // Declaração da variavel multiplos.
 
             MultiplosCalcular calcular = new MultiplosCalcular();
+            //Instância da classe
 
             for (int i = 0; i <= 100; i++)
             {
