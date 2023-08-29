@@ -60,11 +60,13 @@ namespace Multiplos3
 
             // Declaração da variavel multiplos.
 
+            MultiplosCalcular calcular = new MultiplosCalcular();
+
             for (int i = 0; i <= 100; i++)
             {
                 // Loop "for" para iterar de 0 a 100, inclusive.
 
-                if (MultiplosCalcular.Multiplo(i, 3))
+                if (calcular.Multiplo(i, 3))
                 {
                     // Verifica se o número "i" é múltiplo de 3 usando o método "Multiplo" da instância "calculator".
 
