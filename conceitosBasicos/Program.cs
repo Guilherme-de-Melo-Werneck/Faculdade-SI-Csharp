@@ -39,9 +39,6 @@
 
 
 
-using System.Drawing;
-using System.Runtime.Intrinsics.X86;
-using System;
 using conceitosBasicos;
 
 
