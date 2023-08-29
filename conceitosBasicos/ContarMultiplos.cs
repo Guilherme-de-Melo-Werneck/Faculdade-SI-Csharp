@@ -1,8 +1,8 @@
 ﻿using System.Runtime.Intrinsics.X86;
 
-namespace Multiplos3
+namespace conceitosBasicos
 {
-    // Declaração do namespace chamado "Multiplos3" para agrupar classes relacionadas.
+    // Declaração do namespace chamado "conceitosBasicos" para agrupar classes relacionadas.
 
     public class MultiplosCalcular
     {

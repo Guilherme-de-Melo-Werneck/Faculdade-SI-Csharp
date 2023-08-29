@@ -42,19 +42,8 @@
 using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System;
-using Multiplos3;
+using conceitosBasicos;
 
-namespace Multiplos3
-{
-    // Declaração do namespace "Multiplos3" para agrupar as classes e o programa principal.
-
-    class Program
-    {
-        // Declaração da classe "Program", que contém o método principal.
-
-        static void Main(string[] args)
-        {
-            // Declaração do método principal do programa.
 
             int multiplos = 0;
 
@@ -78,19 +67,8 @@ namespace Multiplos3
             Console.WriteLine("Quantidade de múltiplos de 3 no intervalo de 0 a 100: " + multiplos);
             // Exibe a quantidade de múltiplos encontrados.
 
-        }
-    }
-    // Fim da declaração da classe "Program".
-}
-// Fim do namespace "MultiplosDe3".
-
-
-
-//Namespace: O código está dentro do namespace Multiplos3, que é usado para organizar as classes e o programa principal.
-
-//Classe Program: Esta é a classe principal que contém o método Main, que é o ponto de entrada do programa.
-
-//Método Main: O método Main é o ponto de partida para a execução do programa.
+    
+ 
 
 //Instanciação da Classe MultiplosCalcular: Uma instância da classe MultiplosCalcular é criada usando MultiplosCalcular 
 //calcular = new MultiplosCalcular();. Isso permitirá que usemos os métodos definidos na classe MultiplosCalcular.
@@ -112,6 +90,3 @@ namespace Multiplos3
 //if (calcular.Multiplo(i, 3)) = if (calcular.Multiplo(i, 3)): Aqui, estamos verificando se o número i é um múltiplo de 3 usando o método Multiplo da 
 // instância calcular. O método Multiplo retorna true se i for múltiplo de 3 e false caso contrário.
 //multiplos++; = Se o número i for um múltiplo de 3, incrementamos a variável multiplos em 1
-
-
-
