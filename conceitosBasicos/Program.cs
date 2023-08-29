@@ -60,9 +60,6 @@ namespace Multiplos3
             // Criação de uma instância da classe "MultiplosCalculator" para calcular múltiplos.
 
 
-            int multiplos = 0;
-            
-            // Declaração de variáveis para armazenar a quantidade de múltiplos 
 
             for (int i = 0; i <= 100; i++)
             {
