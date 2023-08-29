@@ -59,7 +59,9 @@ namespace Multiplos3
             MultiplosCalcular calcular = new MultiplosCalcular();
             // Criação de uma instância da classe "MultiplosCalculator" para calcular múltiplos.
 
+            int multiplos = 0;
 
+            // Declaração da variavel multiplos.
 
             for (int i = 0; i <= 100; i++)
             {
@@ -77,14 +79,13 @@ namespace Multiplos3
             Console.WriteLine("Quantidade de múltiplos de 3 no intervalo de 0 a 100: " + multiplos);
             // Exibe a quantidade de múltiplos encontrados.
 
-            
-            
+
+
         }
     }
     // Fim da declaração da classe "Program".
 }
 // Fim do namespace "MultiplosDe3".
-
 
 
 //Namespace: O código está dentro do namespace Multiplos3, que é usado para organizar as classes e o programa principal.
