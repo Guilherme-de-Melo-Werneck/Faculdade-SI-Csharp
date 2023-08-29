@@ -8,7 +8,7 @@ namespace Multiplos3
     {
         // Declaração da classe pública chamada "MultiplosCalculator".
 
-        public bool Multiplo(int numero, int divisor)
+        public static bool Multiplo(int numero, int divisor)
         {
             // Declaração de um método público chamado "Multiplo" que aceita dois parâmetros inteiros: "numero" e "divisor".
             // O método irá verificar se "numero" é um múltiplo de "divisor".
