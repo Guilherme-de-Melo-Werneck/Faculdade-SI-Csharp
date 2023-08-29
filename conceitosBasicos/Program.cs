@@ -58,6 +58,8 @@ using conceitosBasicos;
 
                     multiplos++;
                     // Incrementa a contagem de múltiplos se o número for um múltiplo de 3.
+
+                    Console.WriteLine(i); // Imprime os múltiplos de 3 encontrados
                 }
             }
 
