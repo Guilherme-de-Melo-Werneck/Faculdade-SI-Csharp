@@ -1,0 +1,15 @@
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\bin\Debug\net6.0\conceitosBasicos.exe
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\bin\Debug\net6.0\conceitosBasicos.deps.json
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\bin\Debug\net6.0\conceitosBasicos.runtimeconfig.json
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\bin\Debug\net6.0\conceitosBasicos.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\bin\Debug\net6.0\conceitosBasicos.pdb
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\refint\conceitosBasicos.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.pdb
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\conceitosBasicos.genruntimeconfig.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\conceitosBasicosCSharp\conceitosBasicos\obj\Debug\net6.0\ref\conceitosBasicos.dll
