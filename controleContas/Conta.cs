@@ -14,12 +14,13 @@ namespace controleContas
             }
             else
             {
-                throw new ArgumentException("O saldo inicial deve ser superior ou igual a R$10,00.");
+                Console.WriteLine("O saldo inicial deve ser superior ou igual a R$10,00.");
+                Environment.Exit(0); // Encerra o programa
             }
         }
 
         public long Numero { get; private set; }
-        public decimal Saldo { get; set; }
+        public decimal Saldo { get; private set; }
         public Cliente Titular { get; private set; }
         public static decimal SaldoTotalGeral { get; private set; }
 
@@ -32,24 +33,27 @@ namespace controleContas
             }
 
             Saldo -= valorSaque;
-            AtualizarSaldoTotal();
             return Saldo;
         }
 
         public void AtualizarSaldo(decimal novoSaldo)
         {
             Saldo += novoSaldo;
-            AtualizarSaldoTotal();
         }
 
-        private void AtualizarSaldoTotal()
+        public static decimal CalcularSaldoTotal(params Conta[] contas)
         {
-            Conta.AtualizarSaldoTotal(this, Titular.Conta);
-        }
+            decimal saldoTotal = 0;
 
-        public static void AtualizarSaldoTotal(Conta conta1, Conta conta2)
-        {
-            SaldoTotalGeral = conta1.Saldo + conta2.Saldo;
+            foreach (var conta in contas)
+            {
+                saldoTotal += conta.Saldo;
+            }
+
+            return saldoTotal;
         }
     }
 }
+
+
+

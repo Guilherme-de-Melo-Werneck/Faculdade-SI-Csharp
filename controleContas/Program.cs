@@ -34,7 +34,8 @@ namespace controleContas
                         Console.WriteLine($"Número da Conta 2: {conta2.Numero} com saldo {conta2.Saldo}");
                         break;
                     case 2:
-                        Console.WriteLine($"Saldo total geral: {Conta.SaldoTotalGeral}");
+                        decimal saldoTotal = Conta.CalcularSaldoTotal(conta1, conta2);
+                        Console.WriteLine($"Saldo total geral: {saldoTotal}");
                         break;
                     case 3:
                         Console.WriteLine($"Dados do cliente 1: {cliente1.Nome}, CPF: {cliente1.CPF}, Saldo: R${conta1.Saldo}");
@@ -77,5 +78,4 @@ namespace controleContas
         }
     }
 }
-
 
