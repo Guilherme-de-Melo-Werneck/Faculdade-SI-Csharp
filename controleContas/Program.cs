@@ -6,11 +6,22 @@ namespace controleContas
     {
         static void Main(string[] args)
         {
-            Cliente cliente1 = new Cliente("Gustavo", 21, "19878965427");
+            Cliente cliente1 = new Cliente("Gustavo", 20, "19878965427");
             Cliente cliente2 = new Cliente("Guilherme", 21, "17914527793");
 
-            Conta conta1 = new Conta(123456, 1000.00m, cliente1);
-            Conta conta2 = new Conta(654321, 2000.00m, cliente2);
+            Agencia agencia1 = new Agencia(1, "27232341", "24998551866");
+            Agencia agencia2 = new Agencia(2, "27234543", "24997887656");
+
+            Banco banco = new Banco("Inter", 123);
+
+            Conta conta1 = new Conta(123456, agencia1, banco);
+            Conta conta2 = new Conta(654321, agencia2, banco);
+
+            conta1.DefinirCliente(cliente1);
+            conta2.DefinirCliente(cliente2);
+
+            conta1.AtualizarSaldo(1000.00m);
+            conta2.AtualizarSaldo(2000.00m);
 
             while (true)
             {
@@ -31,7 +42,11 @@ namespace controleContas
                 {
                     case 1:
                         Console.WriteLine($"Número da Conta 1: {conta1.Numero} com saldo {conta1.Saldo}");
+                        Console.WriteLine($"Agência da Conta 1: {conta1.Agencia.Numero}, Banco: {conta1.Banco.Nome}");
+                        Console.WriteLine($"CEP da Agência da Conta 1: {conta1.Agencia.CEP}, Telefone: {conta1.Agencia.Telefone}");
                         Console.WriteLine($"Número da Conta 2: {conta2.Numero} com saldo {conta2.Saldo}");
+                        Console.WriteLine($"Agência da Conta 2: {conta2.Agencia.Numero}, Banco: {conta2.Banco.Nome}");
+                        Console.WriteLine($"CEP da Agência da Conta 2: {conta2.Agencia.CEP}, Telefone: {conta2.Agencia.Telefone}");
                         break;
                     case 2:
                         decimal saldoTotal = Conta.CalcularSaldoTotal(conta1, conta2);
@@ -39,9 +54,13 @@ namespace controleContas
                         break;
                     case 3:
                         Console.WriteLine($"Dados do cliente 1: {cliente1.Nome}, CPF: {cliente1.CPF}, Saldo: R${conta1.Saldo}");
+                        Console.WriteLine($"Idade em decimal: {cliente1.Idade} anos");
+                        Console.WriteLine($"Idade em romanos: {cliente1.CalcularIdadeRomana()}");
                         break;
                     case 4:
                         Console.WriteLine($"Dados do cliente 2: {cliente2.Nome}, CPF: {cliente2.CPF}, Saldo: R${conta2.Saldo}");
+                        Console.WriteLine($"Idade em decimal: {cliente2.Idade} anos");
+                        Console.WriteLine($"Idade em romanos: {cliente2.CalcularIdadeRomana()}");
                         break;
                     case 5:
                         Console.WriteLine("Digite o valor do saque da Conta 1:");

@@ -4,24 +4,20 @@ namespace controleContas
 {
     public class Conta
     {
-        public Conta(long numero, decimal saldoInicial, Cliente titular)
+        public Conta(long numero, Agencia agencia, Banco banco)
         {
-            if (saldoInicial >= 10.00m)
-            {
-                this.Numero = numero;
-                this.Saldo = saldoInicial;
-                this.Titular = titular;
-            }
-            else
-            {
-                Console.WriteLine("O saldo inicial deve ser superior ou igual a R$10,00.");
-                Environment.Exit(0); // Encerra o programa
-            }
+            this.Numero = numero;
+            this.Saldo = 0; // Saldo inicializado como zero
+            this.Titular = null; // Cliente inicializado como nulo
+            this.Agencia = agencia;
+            this.Banco = banco;
         }
 
         public long Numero { get; private set; }
         public decimal Saldo { get; private set; }
-        public Cliente Titular { get; private set; }
+        public Cliente? Titular { get; private set; } // Usando Cliente? para permitir nulo
+        public Agencia Agencia { get; private set; }
+        public Banco Banco { get; private set; }
         public static decimal SaldoTotalGeral { get; private set; }
 
         public decimal Saque(decimal valorSaque)
@@ -41,6 +37,18 @@ namespace controleContas
             Saldo += novoSaldo;
         }
 
+        public void DefinirCliente(Cliente cliente)
+        {
+            if (cliente != null)
+            {
+                this.Titular = cliente;
+            }
+            else
+            {
+                Console.WriteLine("Cliente inválido");
+            }
+        }
+
         public static decimal CalcularSaldoTotal(params Conta[] contas)
         {
             decimal saldoTotal = 0;
@@ -54,6 +62,3 @@ namespace controleContas
         }
     }
 }
-
-
-
