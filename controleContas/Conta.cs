@@ -4,8 +4,13 @@ namespace controleContas
 {
     public class Conta
     {
-        public Conta(long numero, Agencia agencia, Banco banco)
+        public Conta(long numero, Agencia agencia, Banco banco, decimal saldoInicial)
         {
+            if (saldoInicial < 10.00m)
+            {
+                Console.WriteLine("O saldo inicial deve ser superior a R$10,00");
+                Environment.Exit(0);
+            }
             this.Numero = numero;
             this.Saldo = 0; // Saldo inicializado como zero
             this.Titular = null; // Cliente inicializado como nulo

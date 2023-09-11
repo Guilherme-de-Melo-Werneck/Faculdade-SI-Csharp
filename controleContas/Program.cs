@@ -14,8 +14,8 @@ namespace controleContas
 
             Banco banco = new Banco("Inter", 123);
 
-            Conta conta1 = new Conta(123456, agencia1, banco);
-            Conta conta2 = new Conta(654321, agencia2, banco);
+            Conta conta1 = new Conta(123456, agencia1, banco, 1000.00m); 
+            Conta conta2 = new Conta(654321, agencia2, banco, 2000.00m); 
 
             conta1.DefinirCliente(cliente1);
             conta2.DefinirCliente(cliente2);
