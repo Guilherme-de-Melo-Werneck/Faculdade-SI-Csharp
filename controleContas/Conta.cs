@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace controleContas
 {
@@ -12,15 +16,15 @@ namespace controleContas
                 Environment.Exit(0);
             }
             this.Numero = numero;
-            this.Saldo = 0; // Saldo inicializado como zero
-            this.Titular = null; // Cliente inicializado como nulo
+            this.Saldo = 0; 
+            this.Titular = null; 
             this.Agencia = agencia;
             this.Banco = banco;
         }
 
         public long Numero { get; private set; }
         public decimal Saldo { get; private set; }
-        public Cliente? Titular { get; private set; } // Usando Cliente? para permitir nulo
+        public Cliente? Titular { get; private set; } 
         public Agencia Agencia { get; private set; }
         public Banco Banco { get; private set; }
         public static decimal SaldoTotalGeral { get; private set; }
