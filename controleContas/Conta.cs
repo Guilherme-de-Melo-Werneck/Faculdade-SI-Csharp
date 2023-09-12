@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace controleContas
 {
@@ -10,21 +6,16 @@ namespace controleContas
     {
         public Conta(long numero, Agencia agencia, Banco banco, decimal saldoInicial)
         {
-            if (saldoInicial < 10.00m)
-            {
-                Console.WriteLine("O saldo inicial deve ser superior a R$10,00");
-                Environment.Exit(0);
-            }
             this.Numero = numero;
-            this.Saldo = 0; 
-            this.Titular = null; 
+            this.Saldo = saldoInicial; // Não verifica mais o saldo inicial
+            this.Titular = null;
             this.Agencia = agencia;
             this.Banco = banco;
         }
 
         public long Numero { get; private set; }
         public decimal Saldo { get; private set; }
-        public Cliente? Titular { get; private set; } 
+        public Cliente? Titular { get; private set; }
         public Agencia Agencia { get; private set; }
         public Banco Banco { get; private set; }
         public static decimal SaldoTotalGeral { get; private set; }
@@ -43,6 +34,12 @@ namespace controleContas
 
         public void AtualizarSaldo(decimal novoSaldo)
         {
+            if (novoSaldo <= 10.00m)
+            {
+                Console.WriteLine("O valor a ser adicionado à conta deve ser maior que R$10,00.");
+                Environment.Exit(0);
+            }
+
             Saldo += novoSaldo;
         }
 
@@ -71,3 +68,4 @@ namespace controleContas
         }
     }
 }
+
