@@ -238,7 +238,7 @@ public class Program
         Console.WriteLine($"Idade em romanos: {cliente.CalcularIdadeRomana()}");
         Console.WriteLine($"Número da Conta: {conta.Numero}");
         Console.WriteLine($"Número da Agência: {conta.Agencia.Numero}");
-        Console.WriteLine($"Nome do Banco: {conta.Banco.Nome}");
+        Console.WriteLine($"Nome do Banco (para ambos): {conta.Banco.Nome}");
         Console.WriteLine($"Número do Banco: {conta.Banco.Numero}");
     }
 
